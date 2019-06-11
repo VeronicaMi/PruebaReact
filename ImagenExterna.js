@@ -1,25 +1,14 @@
 import React, {Component} from 'react';
 import{
-  //para saber si esta en ios o android
-  Platform,
   StyleSheet,
   Text,
   View,
-  Image, 
-  TouchableOpacity,
-  TextInput, 
-  Dimensions, 
-  ScrollView, 
-  WebView
+  Image,
+  Dimensions,
 } from 'react-native';
 
 
-const intructions = Platform.select({
-  ios: 'Press cmd+R to reload, \n' + 'cmd+D or shale for dev menu',
-  android: 'Double tab R on your keyboard to reload, \n' + 'Shake or press menu button for dev menu' 
-});
-
-export default class App extends Component<{}>{
+export default class ImagenExterna extends Component{
 
   constructor( props, env){
     super (props, env);
